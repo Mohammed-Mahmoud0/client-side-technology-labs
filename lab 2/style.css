@@ -1,0 +1,33 @@
+p {
+    color: red;
+}
+
+p, div {
+    color: blue;
+}
+
+#mydiv > p.mainClass {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+div p {
+    font-style: italic;
+}
+
+input[type="text"].myClass {
+    background-color: green;
+}
+
+div + span {
+    color: goldenrod;
+}
+
+p.myClass {
+    background-color: pink;
+}
+
+#mydiv {
+    padding: 10px;
+    border: 2px dashed blue;
+}

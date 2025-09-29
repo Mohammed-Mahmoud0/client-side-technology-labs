@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <center>
+      <form>
+        <label for="first name">first name</label>
+        <input
+          type="text"
+          placeholder=" enter your first name"
+          required
+          id="first name"
+        /><br />
+        <br />
+        <label for="last name">last name</label>
+        <input
+          type="text"
+          placeholder="last name"
+          required
+          id="last name"
+        /><br />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="enter your Email" id="email" /><br />
+        <br />
+        <label for="password">password</label>
+        <input type="password" placeholder="password" id="password" /><br />
+        <br />
+        <label for="rpassword">repeat password</label>
+        <input
+          type="password"
+          placeholder="repeat password"
+          id="rpassword"
+        /><br />
+        <br />
+        <label for="date">enter your birth date</label>
+        <input type="date" placeholder="birth date" id="date" /><br />
+        <br />
+        <label for="file">upload image</label>
+        <input
+          type="file"
+          placeholder="upload image"
+          accept=".png"
+          id="file"
+        /><br />
+        <br />
+        <input type="radio" name="Gender" id="gender-male" value="male" />
+        <label for="gender-male">Male</label>
+        <input type="radio" name="Gender" id="gender-female" value="female" />
+        <label for="gender-female">Female</label>
+        <br />
+        <br />
+        <br />
+
+        <select name="Faculty" id="faculty" multiple size="1">
+          <option value="">--Select Faculty--</option>
+          <option value="cs">computer science</option>
+          <option value="eg">engineering</option>
+          <option value="ar">arts</option>
+          <option value="md">medicine</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="int">programming</label>
+        <input type="checkbox" name="interests" id="int" value="programming" />
+        <label for="play">play video games</label>
+        <input
+          type="checkbox"
+          name="interests"
+          id="play"
+          value="play video games"
+        />
+        <label for="swimming">swimming</label>
+        <input
+          type="checkbox"
+          name="interests"
+          id="swimming"
+          value="swimming"
+        />
+        <br />
+        <br />
+        <label for="about">write something about you:</label><br />
+        <textarea id="about" name="about" rows="10" cols="40"></textarea
+        ><br /><br />
+
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">I agree to terms and conditions</label><br /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+      <br />
+      <br />
+      <form action="Thankyou.html">
+        <input type="submit" value="Submit" />
+      </form>
+    </center>
+  </body>
+</html>
