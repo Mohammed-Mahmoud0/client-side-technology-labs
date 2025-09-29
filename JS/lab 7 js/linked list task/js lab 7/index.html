@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linked List Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linked List Visualizer</h1>
+
+      <div class="controls">
+        <input type="number" id="nodeValue" placeholder="Enter value" />
+        <button id="addBtn">Add</button>
+        <button id="prependBtn">Prepend</button>
+        <button id="popBtn">Pop</button>
+      </div>
+
+      <div class="visualization">
+        <div id="linkedListContainer" class="linked-list-container">
+          <div class="empty-message">Linked List is Empty</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="linkedList.js"></script>
+  </body>
+</html>

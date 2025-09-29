@@ -1,0 +1,11 @@
+Inheritance in JavaScript is a mechanism where one object can access the properties and methods of another object. 
+
+JavaScript supports inheritance primarily through prototypes and class syntax.
+
+In JavaScript, every object has an internal link to another object called its prototype. When you try to access a property or method on an object, JavaScript checks the object itself first. If it doesn’t find it, it looks at the object’s prototype, and so on, up the prototype chain.
+(that covered in today lec.) ---> thank you Eng. Omar for clarification 
+
+			-----------------------------------
+in ES6 ---> js introduced the class syntax (finally we see extend keyword).
+class inheritance more logical and like another programming languages we use extend keyword
+the child can inherit from parent its methods and attrib. with extend keyword.

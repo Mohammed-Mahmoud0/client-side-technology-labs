@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Employee Table</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Name
+            <button onclick="renderTable(sortByName(employees, true))">
+              ▲
+            </button>
+            <button onclick="renderTable(sortByName(employees, false))">
+              ▼
+            </button>
+          </th>
+          <th>
+            Position
+            <button onclick="renderTable(sortByPosition(employees, true))">
+              ▲
+            </button>
+            <button onclick="renderTable(sortByPosition(employees, false))">
+              ▼
+            </button>
+          </th>
+          <th>
+            Office
+            <button onclick="renderTable(sortByOffice(employees, true))">
+              ▲
+            </button>
+            <button onclick="renderTable(sortByOffice(employees, false))">
+              ▼
+            </button>
+          </th>
+          <th>
+            Age
+            <button onclick="renderTable(sortByAge(employees, true))">▲</button>
+            <button onclick="renderTable(sortByAge(employees, false))">
+              ▼
+            </button>
+          </th>
+          <th>
+            Start Date
+            <button onclick="renderTable(sortByDate(employees, true))">
+              ▲
+            </button>
+            <button onclick="renderTable(sortByDate(employees, false))">
+              ▼
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="employee-body"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
